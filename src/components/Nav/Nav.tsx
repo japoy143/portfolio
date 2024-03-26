@@ -33,11 +33,13 @@ function Nav({ theme, reverse, isdark, setDark }: NavProps) {
   return (
     <div className=" sticky top-0  z-20" style={{ backgroundColor: theme }}>
       <nav
-        className=" flex flex-row justify-evenly items-center text-base font-semibold p-2 font-custom"
+        className=" flex flex-row justify-evenly items-center text-2xl font-semibold p-4 font-custom"
         style={{ color: reverse }}
       >
-        <h1>rain</h1>
-        <ul className=" space-x-6 text-sm">
+        <a href="#main" target="" onClick={(event) => smoothScroll(event)}>
+          rain
+        </a>
+        <ul className=" space-x-6 text-2xl">
           <a
             href="#about_me"
             onClick={(event) => smoothScroll(event)}
@@ -46,7 +48,11 @@ function Nav({ theme, reverse, isdark, setDark }: NavProps) {
           >
             About Me
           </a>
-          <a href="" target="">
+          <a
+            href="#tech_stack"
+            target=""
+            onClick={(event) => smoothScroll(event)}
+          >
             TechStacks
           </a>
           <a href="" target="">
@@ -54,7 +60,7 @@ function Nav({ theme, reverse, isdark, setDark }: NavProps) {
           </a>
         </ul>
         <button onClick={() => setDark(!isdark)}>
-          <MoonIcon className="h-4 w-4" style={{ color: reverse }} />
+          <MoonIcon className="h-8 w-8" style={{ color: reverse }} />
         </button>
       </nav>
     </div>

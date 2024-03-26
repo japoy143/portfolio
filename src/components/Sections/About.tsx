@@ -8,12 +8,14 @@ function About({ theme, reverse }: AboutProps) {
   return (
     <div
       id="about_me"
-      className=" block xs:grid grid-cols-3  "
+      className=" h-screen block sm:grid grid-cols-3  "
       style={{ backgroundColor: reverse, color: theme }}
     >
       <section className=" col-span-2  flex flex-row justify-center items-center px-8 text-justify">
-        <article className=" font-custom  font-medium">
-          <h1 className=" text-2xl">Hi, I'm Rainier I. Lesondato II.</h1>
+        <article className=" font-custom  font-medium text-base sm:text-2xl">
+          <h1 className=" text-xl sm:text-3xl">
+            Hi, I'm Rainier I. Lesondato II.
+          </h1>
           <br />
           <p>
             Since I was young, I've been fascinated by technology and how it

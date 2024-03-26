@@ -7,7 +7,7 @@ export default {
         custom: ["Poppins"],
       },
       gridTemplateRows: {
-        custom: `auto, 1fr`,
+        custom: `80px, 1fr`,
       },
       screens: {
         xs: "500px",

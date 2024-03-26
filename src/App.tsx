@@ -2,7 +2,7 @@ import { useState } from "react";
 import "./App.css";
 import Nav from "./components/Nav/Nav";
 
-import { Main, About, TechStack } from "./components/Sections/export";
+import { Main, About, TechStack, Project } from "./components/Sections/export";
 
 function App() {
   const [isdark, setDark] = useState<boolean>(false);
@@ -19,10 +19,11 @@ function App() {
           reverse={reverse}
         />
 
-        <div className=" grid grid-rows-5 ">
+        <div className=" grid  auto-rows-auto ">
           <Main theme={theme} reverse={reverse} isdark={isdark} />
           <About theme={theme} reverse={reverse} isdark={isdark} />
           <TechStack isdark={isdark} reverse={reverse} theme={theme} />
+          <Project reverse={reverse} theme={theme} />
         </div>
       </div>
     </>

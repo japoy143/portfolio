@@ -17,7 +17,7 @@ function TechStack({ reverse }: TechStackProps) {
       <CardsList
         data={TechStackData}
         grid=" grid grid-cols-1 max-h-auto  sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 xs:px-4 xs:space-y-0"
-        className="   bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 flex flex-row  items-center justify-evenly text-1xl font-medium font-custom md:text-2xl  lg:text-3xl"
+        className="   bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 flex flex-row  items-center justify-evenly text-xl font-medium font-custom md:text-2xl  lg:text-3xl"
         reverse={reverse}
       />
     </div>

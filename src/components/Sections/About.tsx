@@ -12,12 +12,12 @@ function About({ theme, reverse }: AboutProps) {
       style={{ backgroundColor: reverse, color: theme }}
     >
       <section className=" col-span-2  flex flex-row justify-center items-center px-8 text-justify">
-        <article className=" font-custom  font-medium text-base sm:text-2xl">
-          <h1 className=" text-xl sm:text-3xl">
+        <article className=" font-custom  font-medium px-4 text-base sm:text-3xl">
+          <h1 className=" text-xl sm:text-4xl">
             Hi, I'm Rainier I. Lesondato II.
           </h1>
           <br />
-          <p>
+          <p className=" indent-6">
             Since I was young, I've been fascinated by technology and how it
             functions. I'm constantly attempting to adapt to new technologies,
             and disassembling electronic components is one of my hobbies.
